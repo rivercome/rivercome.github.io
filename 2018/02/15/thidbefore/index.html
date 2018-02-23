@@ -7,7 +7,7 @@
     
 
     <title>
-      新手入门（零） | 江城子 
+      新手入门（一） | 江城子 
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,16 +16,16 @@
     
     
 
-    <meta name="description" content="写在前面（一些介绍和想法）前端是一个很广的范围。要求掌握的东西很多而且最重要的是发展很快，可能今天很流行的技术明天就无人问津了。所以，前端的学习必然是一种持续学习，要能看到最新的潮流，最好能够自己尝试最新的技术。前端最重要的三大基础HTML，CSS，JavaScript.学习路线一般都是从切图开始，熟悉了解HTML和CSS。关于JS的学习除了比较通用的ES5，还需了解最新的标准ES6,ES7(现在">
+    <meta name="description" content="页面布局本篇介绍三个经典的页面布局：圣杯布局，双飞翼布局，以及多列布局。来熟悉HTML和CSS。其中圣杯布局跟双飞翼布局，目的都是左右两栏固定宽度，中间部分自适应。但是实现方式略有不同但是都运用到了margin取负值以及浮动带来的效果。 圣杯布局我们先定义html结构123456789&amp;lt;body&amp;gt;    &amp;lt;div class=&amp;quot;header&amp;quot;&amp;gt;heade">
 <meta property="og:type" content="article">
-<meta property="og:title" content="新手入门（零） | 江城子">
+<meta property="og:title" content="新手入门（一） | 江城子">
 <meta property="og:url" content="http://yoursite.com/2018/02/15/thidbefore/index.html">
 <meta property="og:site_name" content="江城子">
-<meta property="og:description" content="写在前面（一些介绍和想法）前端是一个很广的范围。要求掌握的东西很多而且最重要的是发展很快，可能今天很流行的技术明天就无人问津了。所以，前端的学习必然是一种持续学习，要能看到最新的潮流，最好能够自己尝试最新的技术。前端最重要的三大基础HTML，CSS，JavaScript.学习路线一般都是从切图开始，熟悉了解HTML和CSS。关于JS的学习除了比较通用的ES5，还需了解最新的标准ES6,ES7(现在">
-<meta property="og:updated_time" content="2018-02-23T04:45:40.434Z">
+<meta property="og:description" content="页面布局本篇介绍三个经典的页面布局：圣杯布局，双飞翼布局，以及多列布局。来熟悉HTML和CSS。其中圣杯布局跟双飞翼布局，目的都是左右两栏固定宽度，中间部分自适应。但是实现方式略有不同但是都运用到了margin取负值以及浮动带来的效果。 圣杯布局我们先定义html结构123456789&amp;lt;body&amp;gt;    &amp;lt;div class=&amp;quot;header&amp;quot;&amp;gt;heade">
+<meta property="og:updated_time" content="2018-02-23T07:56:31.807Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="新手入门（零） | 江城子">
-<meta name="twitter:description" content="写在前面（一些介绍和想法）前端是一个很广的范围。要求掌握的东西很多而且最重要的是发展很快，可能今天很流行的技术明天就无人问津了。所以，前端的学习必然是一种持续学习，要能看到最新的潮流，最好能够自己尝试最新的技术。前端最重要的三大基础HTML，CSS，JavaScript.学习路线一般都是从切图开始，熟悉了解HTML和CSS。关于JS的学习除了比较通用的ES5，还需了解最新的标准ES6,ES7(现在">
+<meta name="twitter:title" content="新手入门（一） | 江城子">
+<meta name="twitter:description" content="页面布局本篇介绍三个经典的页面布局：圣杯布局，双飞翼布局，以及多列布局。来熟悉HTML和CSS。其中圣杯布局跟双飞翼布局，目的都是左右两栏固定宽度，中间部分自适应。但是实现方式略有不同但是都运用到了margin取负值以及浮动带来的效果。 圣杯布局我们先定义html结构123456789&amp;lt;body&amp;gt;    &amp;lt;div class=&amp;quot;header&amp;quot;&amp;gt;heade">
     
     
     
@@ -188,7 +188,7 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title">新手入门（零）</h1>
+    <h1 class="post-title">新手入门（一）</h1>
 
     
 
@@ -209,63 +209,25 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <h3 id="写在前面（一些介绍和想法）"><a href="#写在前面（一些介绍和想法）" class="headerlink" title="写在前面（一些介绍和想法）"></a>写在前面（一些介绍和想法）</h3><p>前端是一个很广的范围。要求掌握的东西很多而且最重要的是发展很快，可能今天很流行的技术明天就无人问津了。所以，前端的学习必然是一种持续学习，要能看到最新的潮流，最好能够自己尝试最新的技术。<br>前端最重要的三大基础HTML，CSS，JavaScript.<br>学习路线一般都是从切图开始，熟悉了解HTML和CSS。<br>关于JS的学习除了比较通用的ES5，还需了解最新的标准ES6,ES7(现在已经更新到ES8了)。</p>
-<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><p>推荐linux和MAC系统。<br>在windows下开发会遇到很多莫名其妙甚至无法解决的报错。尤其目前服务器端的操作系统大部分是linux，如果在windows下开发，最后部署文件时可能因为操作系统编码的不同造成很多不便。</p>
-<h3 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h3><p>强烈推荐<br><a href="http://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">webstorm</a></p>
-<h3 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h3><p><a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="noopener">Node</a><br><a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">git</a></p>
-<h3 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h3><p>关于前端开发的转变，一点看法</p>
-<h4 id="传统模式"><a href="#传统模式" class="headerlink" title="传统模式"></a>传统模式</h4><p>这种模式开发出来的大部分是多页面应用</p>
-<p>传统的前端开发分为三大块html ,css ,js</p>
-<p>html 确定框架<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;传统&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;index.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;style type=&quot;text/css&quot;&gt;&lt;/style&gt;&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;Hello word&lt;/h1&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
-<p>css 进行页面优化<br>js 实现用户交互</p>
-<p>其中js中的jquery等一系列js库受到广泛使用,避免了使用原生js完成一些交互所需要的大量代码</p>
-<h3 id="新型模式"><a href="#新型模式" class="headerlink" title="新型模式"></a>新型模式</h3><p>这种模式开发出来的多是单页面应用</p>
-<p>以react为代表的架构</p>
-<p>这种开发模式，很神奇的开始使用包管理npm工具（yarn也可以完成相同的功能）</p>
-<p>在以传统方式进行页面开发时，仅仅需要一个文本编辑器，一个记事本</p>
-<p>但是现在你需要对你的项目需要先执行</p>
+    <h3 id="页面布局"><a href="#页面布局" class="headerlink" title="页面布局"></a>页面布局</h3><p>本篇介绍三个经典的页面布局：圣杯布局，双飞翼布局，以及多列布局。来熟悉HTML和CSS。<br>其中圣杯布局跟双飞翼布局，目的都是左右两栏固定宽度，中间部分自适应。但是实现方式略有不同<br>但是都运用到了margin取负值以及浮动带来的效果。</p>
+<h4 id="圣杯布局"><a href="#圣杯布局" class="headerlink" title="圣杯布局"></a>圣杯布局</h4><p>我们先定义html结构<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=&quot;header&quot;&gt;header&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;container&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;main&quot;&gt;main&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;left&quot;&gt;left&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;right&quot;&gt;right&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;footer&quot;&gt;footer&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure></p>
+<p>为了方便观察可以给每个div加上背景颜色</p>
 <blockquote>
-<p>npm init</p>
+<p>颜色准确定义应使用十六进制表示法<br>例如<br>黑色 #000000<br>白色 #FFFFFF<br>大多数IDE都支持对于颜色的选择</p>
 </blockquote>
-<p>生成一个package.json文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;   </span><br><span class="line">  &quot;name&quot;: &quot;your-project-name&quot;,</span><br><span class="line">  &quot;version&quot;: &quot;1.0.0&quot;,</span><br><span class="line">  &quot;description&quot;: &quot;&quot;,</span><br><span class="line">  &quot;main&quot;: &quot;index.js&quot;,</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">  &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;author&quot;: &quot;&quot;,</span><br><span class="line">  &quot;license&quot;: &quot;ISC&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>这里面的配置包括了你项目所需要的依赖</p>
-<p>如果从Github拉下来一个项目的话，第一步一定是</p>
+<p>CSS样式如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">   * &#123;</span><br><span class="line">       margin: 0;</span><br><span class="line">       padding: 0;</span><br><span class="line">   &#125;   </span><br><span class="line">   //设置全局样式</span><br><span class="line"></span><br><span class="line">   body &#123;</span><br><span class="line">       min-width: 700px;</span><br><span class="line">   &#125;    </span><br><span class="line">   //设置最小宽度</span><br><span class="line"></span><br><span class="line">   .header,</span><br><span class="line">   .footer &#123;</span><br><span class="line">       border: 1px solid #333;</span><br><span class="line">       background: #aaa;</span><br><span class="line">       text-align: center;</span><br><span class="line">   &#125;   </span><br><span class="line"></span><br><span class="line">   .left,.main,.right &#123;</span><br><span class="line">       position: relative;</span><br><span class="line">       min-height: 130px;</span><br><span class="line">       background-color: red;</span><br><span class="line">       float: left;</span><br><span class="line">   &#125;     </span><br><span class="line">   //设置浮动</span><br><span class="line"></span><br><span class="line">   .container&#123;</span><br><span class="line">  border: 2px solid yellow;</span><br><span class="line">  padding:0 220px 0 200px;</span><br><span class="line">  overflow: hidden;</span><br><span class="line">   &#125;       </span><br><span class="line">   //overflow清除浮动带来的影响</span><br><span class="line"></span><br><span class="line">   .left &#123;</span><br><span class="line"></span><br><span class="line">       margin-left: -100%;</span><br><span class="line">        left: -200px;</span><br><span class="line">       width: 200px;</span><br><span class="line">       background: red;</span><br><span class="line">   &#125;</span><br><span class="line">      &lt;!--  magin-left取-100%使这个div离开本来在的位置。</span><br><span class="line">      并且向上移动整个一行（100%）。left取值-200px是因为它本来有200px的宽度，</span><br><span class="line">      所以要再向左移动200px. --&gt;</span><br><span class="line">   .right &#123;</span><br><span class="line">       right: -220px;</span><br><span class="line">       margin-left: -220px; </span><br><span class="line">       width: 220px;</span><br><span class="line">       background: green;</span><br><span class="line">   &#125;</span><br><span class="line">       //原理同上</span><br><span class="line">   .main &#123;</span><br><span class="line">       width: 100%;</span><br><span class="line">       background: blue;</span><br><span class="line">   &#125;</span><br><span class="line">       //width:100%使其充满这个一行，后面的调整会使其压缩。</span><br><span class="line">   &lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
+<p>圣杯布局有个问题，当面板的main部分比两边的子面板宽度小的时候，布局就会乱掉（虽然一般不会出现这种情况）于是就有了下面的双飞翼。</p>
+<h4 id="双飞翼布局"><a href="#双飞翼布局" class="headerlink" title="双飞翼布局"></a>双飞翼布局</h4><p>首先还是定义HTML结构，<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;header&quot;&gt;header&lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;container&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;main&quot;&gt;</span><br><span class="line">            &lt;div class=&quot;content&quot;&gt;main&lt;/div&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;left&quot;&gt;left&lt;/div&gt;</span><br><span class="line">        &lt;div class=&quot;right&quot;&gt;right&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;footer&quot;&gt;footer&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>我们发现在处理中间内容上双飞翼布局多加了一个div将内容单独包裹起来<br>在写CSS时就可以少写position元素，以及left,right。读者可以自己尝试一下。</p>
+<h4 id="多列布局"><a href="#多列布局" class="headerlink" title="多列布局"></a>多列布局</h4><p>兼容IE6的方式可参考<a href="http://blog.csdn.net/u012999771/article/details/49253059" target="_blank" rel="noopener">博客</a><br>在此介绍用CSS3的columns属性完成多列布局。</p>
 <blockquote>
-<p>npm install</p>
+<p>column-count 属性设置列的具体个数<br>column-width属性控制列的宽度.如果你没有提供column-count属性值，那么，浏览器就是自主决定将文本分成合适的列数。<br>两个属性的属性值是不同单位，不会搞混，所以就有了简写方式，columns</p>
 </blockquote>
-<p>根据package.json文件自动下载必要的依赖，你拉下来的项目在本地才能跑起来<br>当然为了避免手动配置的繁琐</p>
-<p>webpack应运而生（同时兼容了CommonJS和AMD俩种规范）。</p>
-<p>由于JS语法规范的更新和支持总是不同步babel也应运而生。</p>
-<p>回到react中，除了</p>
+<p>比如column-width:10em === columns:10em<br>column-count:5 === columns:4<br>同时声明的话可以写作columns:12 8em</p>
 <blockquote>
-<p>生命周期<br>  JSX<br>  虚拟DOM<br>  STATE与PROPS<br>组件通信 </p>
+<p>两列之间会有缝隙间隔。缺省情况下这个间隔宽度是1em，但如果你使用column-gap属性，就会修改这个缺省的宽度值</p>
 </blockquote>
-<p>概念，针对复杂的交互页面react还引入了redux的架构</p>
-<blockquote>
-<p>redux的使用可以不依赖于React，它支持Ember,AngularJS,jQuery等多种框架，甚至还能只结合JavaScript使用。</p>
-</blockquote>
-<p>目前也有针对react-redux进行封装的新框架比如 dva 等</p>
-<p>redux有三大原则</p>
-<ul>
-<li>单一数据流<ul>
-<li>整个应用的 state 被储存在一棵 object tree 中，并且这个 object tree 只存在于唯一一个 store 中。</li>
-</ul>
-</li>
-<li>State 是只读的<ul>
-<li>唯一改变 state 的方法就是触发 action，action 是一个用于描述已发生事件的普通对象。</li>
-</ul>
-</li>
-<li>使用纯函数来执行修改<ul>
-<li>为了描述 action 如何改变 state tree ，你需要编写 reducers。</li>
-</ul>
-</li>
-</ul>
-<p><a href="http://www.ruanyifeng.com/blogimg/asset/2016/bg2016091802.jpg" target="_blank" rel="noopener">redux工作流程</a><br>简单的讲就是用户触发Action，reducers接受Action并生成新的state重新渲染画面</p>
-<p>其中reducers可以有多个，每个负责处理页面中的一小部分，增强可维护性<br>dispatch是把action传给reducers的一个方法<br>store是全局保存数据的地方，同时管理 state ，监听器， reducers</p>
-<p>为完成单页面应用，前端引用路由概念，用户在切换页面时实际是触发不同的路由，而不是像传统模式下加载一个新的页面。当然这种模式可能导致首次打开需要加载很多资源，使得打开很慢。</p>
-<p>参考<a href="http://cn.redux.js.org/docs/introduction/ThreePrinciples.html" target="_blank" rel="noopener">redux的中文文档</a><br><a href="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html" target="_blank" rel="noopener">阮一峰的redux教程</a><br><!-- 
-[Chrome 扩展程序推荐](https://www.zhihu.com/question/264685470/answer/321241303?utm_source=com.tencent.tim&utm_medium=social)
-[Chrome 开发工具之Timeline](http://blog.csdn.net/weixin_36401046/article/details/73293460) --></p>
+<p>关于列高度：各列的高度是均衡的，浏览器会自动调整每列里填充多少文本、均分文本，来使各列的高度保持均衡一致。<br>然而，有时候，我们需要设定列的最大高度，这个时候，文本内容会从第一列开始填充，然后第二列，第三列，也许以后的列会填不满，也许会溢出。所以，当对多列布局设定了height或max-height属性值后，列会伸长到指定高度——无论内容有多少，够不够或超不超。</p>
 
   </section>
 

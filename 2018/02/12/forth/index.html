@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      新手入门（二） | 江城子 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="laowang">
+    
+    
+
+    <meta name="description" content="本篇将介绍使用CSS以及JS实现下拉功能的方式。  使用纯CSS实现下拉菜单首先定义HTML结构 123456789101112131415&amp;lt;body&amp;gt;    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;        &amp;lt;input type=&amp;quot;radio&amp;quot; id=&amp;quot;item1&amp;quot; name=&amp;quot;it">
+<meta property="og:type" content="article">
+<meta property="og:title" content="新手入门（二） | 江城子">
+<meta property="og:url" content="http://yoursite.com/2018/02/12/forth/index.html">
+<meta property="og:site_name" content="江城子">
+<meta property="og:description" content="本篇将介绍使用CSS以及JS实现下拉功能的方式。  使用纯CSS实现下拉菜单首先定义HTML结构 123456789101112131415&amp;lt;body&amp;gt;    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;        &amp;lt;input type=&amp;quot;radio&amp;quot; id=&amp;quot;item1&amp;quot; name=&amp;quot;it">
+<meta property="og:updated_time" content="2018-02-23T05:50:32.119Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="新手入门（二） | 江城子">
+<meta name="twitter:description" content="本篇将介绍使用CSS以及JS实现下拉功能的方式。  使用纯CSS实现下拉菜单首先定义HTML结构 123456789101112131415&amp;lt;body&amp;gt;    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;        &amp;lt;input type=&amp;quot;radio&amp;quot; id=&amp;quot;item1&amp;quot; name=&amp;quot;it">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">江城子</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/rivercome" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">新手入门（二）</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2018-02-12" class="post-meta__date date">2018-02-12</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>本篇将介绍使用CSS以及JS实现下拉功能的方式。 </p>
+<h2 id="使用纯CSS实现下拉菜单"><a href="#使用纯CSS实现下拉菜单" class="headerlink" title="使用纯CSS实现下拉菜单"></a>使用纯CSS实现下拉菜单</h2><p>首先定义HTML结构</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=&quot;container&quot;&gt;</span><br><span class="line">        &lt;input type=&quot;radio&quot; id=&quot;item1&quot; name=&quot;item&quot;&gt;</span><br><span class="line">        &lt;label for=&quot;item1&quot;&gt;Item1&lt;/label&gt;</span><br><span class="line">        &lt;div class=&quot;context&quot;&gt;1&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;input type=&quot;radio&quot; id=&quot;item2&quot; name=&quot;item&quot;&gt;</span><br><span class="line">        &lt;label for=&quot;item2&quot;&gt;Item2&lt;/label&gt;</span><br><span class="line">        &lt;div class=&quot;context&quot;&gt;2&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;input type=&quot;radio&quot; id=&quot;item3&quot; name=&quot;item&quot;&gt;</span><br><span class="line">        &lt;label for=&quot;item3&quot;&gt;Item3&lt;/label&gt;</span><br><span class="line">        &lt;div class=&quot;context&quot;&gt;3&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>我们希望得到的结果是，label里div的内容被隐藏。等待我们点击label标签让他们显现出来。<br>当然我们也可以写成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;label for=&quot;item1&quot;&gt;</span><br><span class="line"> &lt;input type=&quot;radio&quot; id=&quot;item1&quot; name=&quot;item&quot;&gt;</span><br><span class="line"> &lt;/label&gt;</span><br></pre></td></tr></table></figure>
+<p>或者通过a标签的跳转</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;section&gt;</span><br><span class="line">     &lt;a href=&quot;#item1&quot;&gt;&lt;h3&gt;Item1&lt;/h3&gt;&lt;/a&gt;</span><br><span class="line">      &lt;p id=&quot;item1&quot;&gt;1&lt;/p&gt;</span><br><span class="line">            &lt;/section&gt;</span><br></pre></td></tr></table></figure>
+<p>回到原来的方法,使用CSS3中的transition属性使动画流畅，-webkit，-moz，-ms分别是谷歌，火狐，IE的浏览器内核前缀。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">    * &#123;</span><br><span class="line">        margin: 0;</span><br><span class="line">        padding: 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    html,</span><br><span class="line">    body &#123;</span><br><span class="line">        width: 100%;</span><br><span class="line">        height: 100%;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    .container &#123;</span><br><span class="line">        width: 80%;</span><br><span class="line">        height: 400px;</span><br><span class="line">        margin: 0 auto;</span><br><span class="line">        margin-top: 30px;</span><br><span class="line">        border: 1px solid #dddddd;</span><br><span class="line">        border-radius: 1px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    input &#123;</span><br><span class="line">        display: none;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    label &#123;</span><br><span class="line">        display: block;</span><br><span class="line">        background-color: #F5F5F5;</span><br><span class="line">        width: 99%;</span><br><span class="line">        height: 40px;</span><br><span class="line">        margin: 0 auto;</span><br><span class="line">        border: 1px solid #dddddd;</span><br><span class="line">        border-radius: 2px;</span><br><span class="line">        margin-top: 5px;</span><br><span class="line">        line-height: 40px;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    .context &#123;</span><br><span class="line">        width: 99%;</span><br><span class="line">        height: 0px;</span><br><span class="line">        margin: 0 auto;</span><br><span class="line">        border: 1px solid #dddddd;</span><br><span class="line">        border-radius: 2px;</span><br><span class="line">        visibility: hidden;</span><br><span class="line">        transition: height 0.5s linear;</span><br><span class="line">        -webkit-transition: height 0.5s linear;</span><br><span class="line">        -moz-transition: height 0.5s linear;</span><br><span class="line">        -ms-transition: height 0.5s linear;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    input:checked+label+.context &#123;</span><br><span class="line">        visibility: visible;</span><br><span class="line">        height: 150px;</span><br><span class="line">    &#125;</span><br><span class="line">    //伪类选择器</span><br><span class="line">    &lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="使用JS实现下拉"><a href="#使用JS实现下拉" class="headerlink" title="使用JS实现下拉"></a>使用JS实现下拉</h2><p>页面结构<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;nav&quot;&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">        &lt;li onmouseover=&quot;display(this)&quot; onmouseout=&quot;hide(this)&quot;&gt; //鼠标动作</span><br><span class="line">            &lt;a href=&quot;javascript:;&quot;&gt;首页&lt;/a&gt;</span><br><span class="line">                &lt;ul&gt;&lt;li&gt;&lt;a href=&quot;#&quot;&gt;二级导航栏1&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;二级导航栏2&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">                &lt;/ul&gt;</span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">   &lt;/ul&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>显示和隐藏俩个函数，除了display也可以用visibility的hidden和visible属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">   </span><br><span class="line">   function display(li) &#123;</span><br><span class="line">       var getNav = li.getElementsByTagName(&quot;ul&quot;); </span><br><span class="line">       getNav.style.display = &quot;block&quot;;</span><br><span class="line">   &#125;</span><br><span class="line">   function hide(li) &#123;</span><br><span class="line">       var getNav = li.getElementsByTagName(&quot;ul&quot;);</span><br><span class="line">       getNav.style.display = &quot;none&quot;; </span><br><span class="line">   &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>对比俩种方式，JS实现下拉的思路十分清楚简单。所以页面的大部分交互动作都是由JS完成的。<br>读者若有兴趣可自己查找资料，尝试用原生JS完成一个轮播图。</p>
+
+  </section>
+
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+      <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv" style="display:block;position:fixed;bottom:0;z-index:99999">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
